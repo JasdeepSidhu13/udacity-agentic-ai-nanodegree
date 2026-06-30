@@ -29,6 +29,19 @@ Udacity Agentic AI Nanodegree coursework and portfolio.
 | 3 | UdaPlay | [Udaplay](https://github.com/JasdeepSidhu13/Udaplay) | Offline RAG, vector search, web search, game research agent |
 | 4 | Multi-Agent System | [Multi-Agent-System](https://github.com/JasdeepSidhu13/Multi-Agent-System) | Business process automation with specialist agents and shared state |
 
+The full source code for each project is also included directly in this
+repository, in a same-named subdirectory:
+
+| Project | Local Directory |
+|---------|-----------------|
+| AgentsVille Trip Planner | [`AgentsVille-Trip-Planner/`](AgentsVille-Trip-Planner) |
+| Agentic Workflow | [`AgenticWorkFlow/`](AgenticWorkFlow) |
+| UdaPlay | [`Udaplay/`](Udaplay) |
+| Multi-Agent System | [`Multi-Agent-System/`](Multi-Agent-System) |
+
+These directories are snapshots vendored from the linked source repositories,
+so you can browse all four projects without leaving this repository.
+
 ## Why This Portfolio Matters
 
 The projects in this portfolio move beyond single-prompt LLM demos. They show
@@ -432,7 +445,8 @@ When running any project locally:
 
 ## Repository Purpose
 
-This repository is intended to serve as a central entry point for the Udacity
-Agentic AI Nanodegree work. It does not duplicate the full implementation of
-each project. Instead, it links to the source repositories and explains the
-purpose, significance, and instructions for exploring each completed project.
+This repository serves as a central entry point for the Udacity Agentic AI
+Nanodegree work. In addition to linking to each source repository and explaining
+the purpose, significance, and instructions for exploring each completed project,
+it now also includes a full vendored snapshot of all four projects in same-named
+subdirectories so the entire portfolio can be browsed in one place.
