@@ -20,6 +20,17 @@ demonstrated.
 All four projects listed here were completed by Jasdeep Sidhu as part of the
 Udacity Agentic AI Nanodegree coursework and portfolio.
 
+## Certification
+
+This portfolio is backed by a verified Udacity certificate confirming completion
+of the **Agentic AI** Nanodegree program.
+
+- **Awarded to:** Jasdeep Sidhu
+- **Program:** Agentic AI Nanodegree
+- **Date:** June 21, 2026
+- **Certificate (PDF):** [`certificate-agentic-ai-nanodegree.pdf`](certificate-agentic-ai-nanodegree.pdf)
+- **Verify online:** [udacity.com/certificate/e/568cae2a-eaa8-11f0-846f-27f0063adf9e](https://www.udacity.com/certificate/e/568cae2a-eaa8-11f0-846f-27f0063adf9e)
+
 ## Project Index
 
 | # | Project | Repository | Primary Focus |
