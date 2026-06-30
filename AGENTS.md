@@ -2,16 +2,26 @@
 
 ## Cursor Cloud specific instructions
 
-This repository is **documentation-only**. It contains a single `README.md` that
-acts as the portfolio hub for the Udacity Agentic AI Nanodegree work and links
-out to four separate external project repositories. There is intentionally:
+This repository is the portfolio hub for the Udacity Agentic AI Nanodegree work.
+`README.md` is the entry point, and the **full source of all four projects is now
+vendored into same-named subdirectories**:
 
-- no application source code in this repo,
-- no dependency manifest (no `requirements.txt`, `package.json`, etc.),
-- no build system, no automated tests, and no lint configuration.
+- `AgentsVille-Trip-Planner/`
+- `AgenticWorkFlow/`
+- `Udaplay/`
+- `Multi-Agent-System/`
 
-As a result there is nothing to install, build, lint, or test here, and the
-startup update script is a no-op.
+These directories are snapshots copied from the linked source repositories (with
+their nested `.git`, `.DS_Store`, and `.ipynb_checkpoints` removed). They are
+**not** git submodules, so updates pushed to the upstream repos do not flow here
+automatically — re-vendor manually if you need to refresh them.
+
+The repository root itself has no aggregate dependency manifest, build system,
+automated tests, or lint config, so the startup update script is a no-op. Each
+vendored project carries its own dependencies and run instructions (see each
+project's `requirements.txt` / `README.md` and the per-project "How to Explore"
+sections in the root `README.md`). Those projects require their own `.env` files
+(OpenAI/Tavily keys) to actually run.
 
 ### "Running" this repo
 
