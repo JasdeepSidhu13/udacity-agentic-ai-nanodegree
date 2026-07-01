@@ -20,6 +20,11 @@ demonstrated.
 All four projects listed here were completed by Jasdeep Sidhu as part of the
 Udacity Agentic AI Nanodegree coursework and portfolio.
 
+## Sample Resume
+
+A polished, print-ready sample resume for an **Agentic AI Engineer** role is
+available here: [`agentic-ai-engineer-resume.html`](agentic-ai-engineer-resume.html).
+
 ## Certification
 
 This portfolio is backed by a verified Udacity certificate confirming completion

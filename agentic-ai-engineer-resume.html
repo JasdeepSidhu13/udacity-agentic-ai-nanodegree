@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jasdeep Sidhu - Agentic AI Engineer Resume</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5c667a;
+      --accent: #2557d6;
+      --accent-soft: #eaf0ff;
+      --line: #d9deea;
+      --paper: #ffffff;
+      --background: #f4f6fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      line-height: 1.48;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 36px auto;
+      padding: 44px 48px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 24px 70px rgba(23, 32, 51, 0.12);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 6vw, 4.3rem);
+      letter-spacing: -0.075em;
+      line-height: 0.92;
+    }
+
+    .headline {
+      margin: 16px 0 0;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .contact-card {
+      min-width: 245px;
+      align-self: start;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
+    }
+
+    .contact-card p {
+      margin: 0 0 9px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .contact-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-card strong {
+      display: block;
+      color: var(--ink);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .impact-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 26px 0 30px;
+    }
+
+    .metric {
+      padding: 14px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+      gap: 34px;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      font-size: 0.86rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .role,
+    .project,
+    .education {
+      margin-bottom: 20px;
+    }
+
+    .role:last-child,
+    .project:last-child,
+    .education:last-child {
+      margin-bottom: 0;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 4px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.02rem;
+      letter-spacing: -0.01em;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .subline {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .sidebar section {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fbfcff;
+    }
+
+    .skill-group {
+      margin-bottom: 15px;
+    }
+
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-group h3 {
+      margin-bottom: 7px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .chip {
+      padding: 6px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--ink);
+      font-size: 0.78rem;
+      font-weight: 650;
+    }
+
+    .project h3 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .project h3 span {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.67rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        margin: 0;
+        padding: 28px 22px;
+        border: 0;
+        border-radius: 0;
+      }
+
+      .hero,
+      .content,
+      .impact-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        min-width: 0;
+      }
+
+      .row {
+        display: block;
+      }
+
+      .meta {
+        white-space: normal;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0.45in;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      a {
+        color: #000000;
+      }
+
+      .sidebar section,
+      .metric,
+      .contact-card {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="Sample resume for an Agentic AI Engineer">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Agentic AI Engineer</p>
+        <h1>Jasdeep Sidhu</h1>
+        <p class="headline">
+          Applied AI engineer focused on production-grade agentic systems, multi-agent orchestration,
+          retrieval-augmented generation, tool use, evaluation loops, and dependable LLM workflows.
+        </p>
+      </div>
+      <aside class="contact-card" aria-label="Contact information">
+        <p><strong>Email</strong> jasdeep.sidhu@example.com</p>
+        <p><strong>Phone</strong> +1 555 013 2048</p>
+        <p><strong>Location</strong> San Francisco, CA</p>
+        <p><strong>GitHub</strong> github.com/JasdeepSidhu13</p>
+        <p><strong>LinkedIn</strong> linkedin.com/in/jssidhu9</p>
+      </aside>
+    </header>
+
+    <section class="impact-strip" aria-label="Career highlights">
+      <div class="metric">
+        <strong>4</strong>
+        <span>Agentic AI portfolio projects</span>
+      </div>
+      <div class="metric">
+        <strong>12+</strong>
+        <span>Reusable agent patterns</span>
+      </div>
+      <div class="metric">
+        <strong>95%</strong>
+        <span>Structured-output validation target</span>
+      </div>
+      <div class="metric">
+        <strong>PhD</strong>
+        <span>AI research foundation</span>
+      </div>
+    </section>
+
+    <div class="content">
+      <div>
+        <section aria-labelledby="summary">
+          <h2 id="summary">Executive Summary</h2>
+          <p>
+            Agentic AI Engineer with deep experience designing LLM applications that plan, call tools,
+            retrieve domain knowledge, validate structured outputs, and improve through evaluator feedback.
+            Strong fit for teams building autonomous workflows, AI copilots, enterprise knowledge agents,
+            and multi-agent systems that must be observable, testable, and reliable.
+          </p>
+        </section>
+
+        <section aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+
+          <article class="role">
+            <div class="row">
+              <h3>Senior Agentic AI Engineer</h3>
+              <p class="meta">2024 - Present</p>
+            </div>
+            <p class="subline">Nexus Intelligence Labs - San Francisco, CA</p>
+            <ul>
+              <li>Architected multi-agent workflows that route tasks across planner, retriever, evaluator, and tool-using agents for enterprise automation use cases.</li>
+              <li>Built RAG pipelines with vector search, metadata filters, reranking, grounding checks, and citation-aware answer synthesis.</li>
+              <li>Implemented structured outputs with Pydantic schemas, retry policies, and LLM-as-judge evaluators to reduce invalid responses and hallucinated actions.</li>
+              <li>Partnered with product and platform teams to move prototypes into observable services with prompt versioning, regression tests, and cost monitoring.</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="row">
+              <h3>Machine Learning Engineer, Applied LLMs</h3>
+              <p class="meta">2021 - 2024</p>
+            </div>
+            <p class="subline">Helio Systems - Seattle, WA</p>
+            <ul>
+              <li>Developed AI assistants for internal operations, combining function calling, document retrieval, SQL tools, and guardrail checks.</li>
+              <li>Designed evaluation harnesses for factuality, format compliance, tool-selection accuracy, and task-completion quality.</li>
+              <li>Improved latency and token efficiency through prompt compression, cached retrieval, batch embedding jobs, and model-routing heuristics.</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="row">
+              <h3>AI Research Engineer</h3>
+              <p class="meta">2018 - 2021</p>
+            </div>
+            <p class="subline">University AI Systems Lab - Berkeley, CA</p>
+            <ul>
+              <li>Researched planning, uncertainty-aware reasoning, and human-in-the-loop evaluation for autonomous decision systems.</li>
+              <li>Published and presented research on robust agent behavior, workflow decomposition, and evaluation methodology.</li>
+              <li>Mentored graduate and undergraduate researchers building reproducible ML experiments and open-source research tools.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 id="projects">Selected Agentic AI Projects</h2>
+
+          <article class="project">
+            <h3>AgentsVille Trip Planner <span>Planning</span></h3>
+            <p>
+              Multi-agent travel assistant that generates and revises personalized itineraries using
+              structured traveler inputs, weather/activity tools, ReAct-style revision, and evaluator feedback.
+            </p>
+          </article>
+
+          <article class="project">
+            <h3>Agentic Workflow Library <span>Orchestration</span></h3>
+            <p>
+              Reusable agent framework demonstrating direct prompting, augmented prompting, routing,
+              knowledge-augmented responses, evaluation agents, and action-planning workflows.
+            </p>
+          </article>
+
+          <article class="project">
+            <h3>UdaPlay Game Research Agent <span>RAG</span></h3>
+            <p>
+              Offline and web-augmented research agent that combines local vector retrieval, game metadata,
+              web search, and grounded summaries for user-specific discovery tasks.
+            </p>
+          </article>
+
+          <article class="project">
+            <h3>Business Multi-Agent Order System <span>Automation</span></h3>
+            <p>
+              Specialist-agent workflow for quote requests and order fulfillment with shared state,
+              role-specific tools, trace logging, and quality checks for business process automation.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <section aria-labelledby="skills">
+          <h2 id="skills">Skills</h2>
+
+          <div class="skill-group">
+            <h3>Agentic AI</h3>
+            <div class="chips">
+              <span class="chip">Multi-agent systems</span>
+              <span class="chip">Tool use</span>
+              <span class="chip">Function calling</span>
+              <span class="chip">ReAct</span>
+              <span class="chip">Planning agents</span>
+              <span class="chip">Evaluator loops</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>LLM Engineering</h3>
+            <div class="chips">
+              <span class="chip">RAG</span>
+              <span class="chip">Prompt design</span>
+              <span class="chip">Structured outputs</span>
+              <span class="chip">Guardrails</span>
+              <span class="chip">LLM-as-judge</span>
+              <span class="chip">Embeddings</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Engineering</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">Pydantic</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Vector DBs</span>
+              <span class="chip">Git</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Observability</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>ML Foundations</h3>
+            <div class="chips">
+              <span class="chip">NLP</span>
+              <span class="chip">Evaluation</span>
+              <span class="chip">Search</span>
+              <span class="chip">Ranking</span>
+              <span class="chip">Experiment design</span>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="education">
+          <h2 id="education">Education</h2>
+
+          <article class="education">
+            <h3>Ph.D. in Computer Science</h3>
+            <p class="subline">University of California, Berkeley</p>
+            <p class="note">Research focus: autonomous agents, planning, human-AI collaboration, and trustworthy ML evaluation.</p>
+          </article>
+
+          <article class="education">
+            <h3>B.S. in Computer Science</h3>
+            <p class="subline">University of Washington</p>
+            <p class="note">Graduated with honors. Coursework in AI, distributed systems, algorithms, databases, and software engineering.</p>
+          </article>
+        </section>
+
+        <section aria-labelledby="certifications">
+          <h2 id="certifications">Credentials</h2>
+          <p class="note">
+            Udacity Agentic AI Nanodegree, focused on tool-using agents, multi-agent orchestration,
+            retrieval-augmented generation, evaluation, and production workflow design.
+          </p>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
